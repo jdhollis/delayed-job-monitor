@@ -1,0 +1,6 @@
+options:
+  rails_root:
+    name: Full path to the Rails application's root
+  rails_env:
+    name: Rails environment to be monitored
+    default: production
