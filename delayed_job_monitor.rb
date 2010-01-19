@@ -19,6 +19,8 @@ class DelayedJobMonitor < Scout::Plugin
       }
       
       remember :failed, failed.map { |j| j.id }
+    else
+      memory.clear
     end
     
     report :total => DelayedJob.count
@@ -27,7 +29,7 @@ class DelayedJobMonitor < Scout::Plugin
     report :failing => DelayedJob.count(:conditions => 'attempts > 0 AND failed_at IS NULL AND locked_at IS NULL')
     report :failed => failed.size
   end
-
+ 
 private
   
   def establish_database_connection
