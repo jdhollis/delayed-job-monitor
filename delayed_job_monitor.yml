@@ -4,3 +4,34 @@ options:
   rails_env:
     name: Rails environment to be monitored
     default: production
+metadata:
+  total:
+    units: "jobs"
+    larger_is_better: "0"
+    delimiter: ","
+    precision: "0"
+    label: Total
+  running:
+    units: "jobs"
+    larger_is_better: "1"
+    delimiter: ","
+    precision: "0"
+    label: Running
+  scheduled:
+    units: "jobs"
+    larger_is_better: "0"
+    delimiter: ","
+    precision: "0"
+    label: Scheduled
+  failing:
+    units: "jobs"
+    larger_is_better: "0"
+    delimiter: ","
+    precision: "0"
+    label: Failing
+  failed:
+    units: "jobs"
+    larger_is_better: "0"
+    delimite: ","
+    precision: "0"
+    label: Failed
