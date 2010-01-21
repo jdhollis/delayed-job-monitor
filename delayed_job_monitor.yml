@@ -4,6 +4,10 @@ options:
   rails_env:
     name: Rails environment to be monitored
     default: production
+  utc:
+    name: Use UTC?
+    default: "1"
+    notes: You're using UTC right?
 metadata:
   total:
     units: "jobs"
