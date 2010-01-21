@@ -11,6 +11,12 @@ metadata:
     delimiter: ","
     precision: "0"
     label: Total
+  waiting:
+    units: "jobs"
+    larger_is_better: "1"
+    delimiter: ","
+    precision: "0"
+    label: Waiting
   running:
     units: "jobs"
     larger_is_better: "1"
